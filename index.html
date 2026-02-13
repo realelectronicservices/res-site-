@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>R.E.S. — Real Electronic Services</title>
+  <meta name="description" content="R.E.S. provides troubleshooting, repairs, and small upgrades for electronic security and building entry systems in Oakville, Burlington, and Milton." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg">
+
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="./index.html" aria-label="Real Electronic Services home">
+          <span class="logo"><img src="./assets/logo.jpg" alt="R.E.S. logo" /></span>
+          <span>
+            <div class="brandTitle">Real Electronic Services</div>
+            <div class="brandTag">Electronic Security, Simplified</div>
+          </span>
+        </a>
+
+        <nav aria-label="Primary">
+          <a href="#service">Service & repairs</a>
+          <a href="#systems">Systems we support</a>
+          <a href="#choose">Residential / Commercial</a>
+          <a href="./request.html">Request service</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="wrap heroShell">
+        <div class="kicker">Service area: Oakville • Burlington • Milton</div>
+        <h1>Service-first troubleshooting for existing security and entry systems.</h1>
+        <p class="sub">
+          R.E.S. (Real Electronic Services) specializes in troubleshooting, repairs, and small upgrades for electronic security and building entry systems—
+          including access control, alarms, cameras/NVRs, and intercom/telephone-entry systems (NSL/auto-dialer), plus related wiring/network issues.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="./request.html">Request service / request a call back</a>
+          <a class="btn ghost" href="tel:+16478480573">Call 647-848-0573</a>
+          <a class="btn ghost" href="mailto:sales@realelectronicservices.com">Email sales@realelectronicservices.com</a>
+        </div>
+
+        <div class="pills">
+          <span class="pill">Any manufacturer</span>
+          <span class="pill">Diagnosis + remediation</span>
+          <span class="pill">Documentation / handoff</span>
+          <span class="pill">Mobile service business (no public address)</span>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="wrap">
+        <div class="grid">
+
+          <div class="card" id="service">
+            <h2>Service & Repairs</h2>
+            <p>
+              I service and repair existing electronic security equipment from any manufacturer. No matter the brand or who installed it,
+              I’m skilled at quickly assessing unfamiliar systems and finding practical solutions to get them back online.
+            </p>
+          </div>
+
+          <div class="card soft" id="systems">
+            <h2>Systems we support</h2>
+            <ul class="list">
+              <li>Access control (door hardware, power supplies, controllers, readers)</li>
+              <li>Intercom / telephone-entry (including NSL / auto-dialer)</li>
+              <li>Cameras & recording (NVR issues, video retrieval, stability)</li>
+              <li>Alarm-related faults (devices, signaling, integration issues)</li>
+              <li>Wiring/network faults, system-room cleanup, and serviceability upgrades</li>
+            </ul>
+          </div>
+
+          <div class="card" id="choose">
+            <h2>Choose your path</h2>
+            <p class="small">This helps us ask the right questions and book the right kind of call.</p>
+
+            <div class="split">
+              <div class="choice">
+                <h3>Residential</h3>
+                <p>Service and repairs for existing systems in the Halton corridor (Oakville, Burlington, Milton).</p>
+                <div class="miniRow">
+                  <a class="btn primary" href="./request.html">Request a call back</a>
+                  <a class="btn ghost" href="tel:+16478480573">Call</a>
+                </div>
+              </div>
+
+              <div class="choice">
+                <h3>Commercial / Property management</h3>
+                <p>Troubleshooting, documentation, and clean handoffs. Overflow support available for partners.</p>
+                <div class="miniRow">
+                  <a class="btn primary" href="./request.html">Request service</a>
+                  <a class="btn ghost" href="tel:+16478480573">Call</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card soft">
+            <h2>How service works</h2>
+            <ul class="list">
+              <li>We confirm service area, system type, and urgency.</li>
+              <li>You share symptoms and any photos of the head-end / panel.</li>
+              <li>We book a time for remote triage or an on-site visit.</li>
+              <li>Work is time-and-materials with defined minimums and clear dispatch expectations.</li>
+            </ul>
+          </div>
+
+          <div class="notice">
+            <strong>Privacy note:</strong> This is a mobile service business; a street address is not published.
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Floating desktop CTA -->
+    <a class="btn primary fab" href="./request.html">Request service</a>
+
+    <!-- Mobile sticky bar -->
+    <div class="mobileBar" role="navigation" aria-label="Quick actions">
+      <div class="row">
+        <a class="primary" href="./request.html">Request service</a>
+        <a href="tel:+16478480573">Call</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrap small">
+        © <span id="y"></span> Real Electronic Services (R.E.S.) • Oakville • Burlington • Milton
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
