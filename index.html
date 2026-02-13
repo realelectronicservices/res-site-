@@ -12,6 +12,8 @@
 
     <header>
       <div class="wrap topbar">
+        <button class="burger" id="menuBtn" aria-label="Open menu" aria-controls="navPanel" aria-expanded="false">☰</button>
+
         <a class="brand" href="./index.html" aria-label="Real Electronic Services home">
           <span class="logo"><img src="./assets/logo.jpg" alt="R.E.S. logo" /></span>
           <span>
@@ -28,6 +30,28 @@
         </nav>
       </div>
     </header>
+
+    <div class="scrim" id="scrim" aria-hidden="true"></div>
+
+    <aside class="navPanel" id="navPanel" aria-label="Mobile menu">
+      <div class="head">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="logo"><img src="./assets/logo.jpg" alt="R.E.S. logo" /></span>
+          <div>
+            <div class="brandTitle">Real Electronic Services</div>
+            <div class="brandTag">Electronic Security, Simplified</div>
+          </div>
+        </div>
+        <button class="iconBtn" id="closeBtn" aria-label="Close menu">✕</button>
+      </div>
+      <a href="./index.html">Home</a>
+      <a href="./index.html#service">Service & repairs</a>
+      <a href="./index.html#systems">Systems we support</a>
+      <a href="./index.html#choose">Residential / Commercial</a>
+      <a class="primary" href="./request.html">Request service</a>
+      <a href="tel:+16478480573">Call 647-848-0573</a>
+      <a href="mailto:sales@realelectronicservices.com">Email sales@realelectronicservices.com</a>
+    </aside>
 
     <section class="hero">
       <div class="wrap heroShell">
@@ -140,6 +164,29 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    (function(){
+      const btn = document.getElementById('menuBtn');
+      const close = document.getElementById('closeBtn');
+      const scrim = document.getElementById('scrim');
+      const panel = document.getElementById('navPanel');
+      if(!btn || !close || !scrim || !panel) return;
+
+      function openMenu(){
+        document.body.classList.add('menuOpen');
+        btn.setAttribute('aria-expanded','true');
+      }
+      function closeMenu(){
+        document.body.classList.remove('menuOpen');
+        btn.setAttribute('aria-expanded','false');
+      }
+
+      btn.addEventListener('click', openMenu);
+      close.addEventListener('click', closeMenu);
+      scrim.addEventListener('click', closeMenu);
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeMenu(); });
+      panel.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenu));
+    })();
   </script>
 </body>
 </html>
