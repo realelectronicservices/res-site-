@@ -68,7 +68,7 @@ header{
   border: 1px solid rgba(255,255,255,.18);
   background: rgba(255,255,255,.06);
 }
-.logo img{ width:100%; height:100%; object-fit:contain;}
+.logo img{width:100%; height:100%; object-fit: contain}
 .brandTitle{font-weight: 900; letter-spacing:.02em}
 .brandTag{font-size:.92rem; color: var(--muted)}
 
@@ -238,80 +238,3 @@ footer{
 }
 
 .small{ font-size: .92rem; }
-
-/* Hamburger nav (mobile) */
-.burger{
-  display:none;
-  width:44px; height:44px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.18);
-  background: rgba(255,255,255,.06);
-  color: rgba(255,255,255,.92);
-}
-.burger:focus{ outline: 2px solid rgba(43,212,255,.55); outline-offset: 2px; }
-
-.navPanel{
-  display:none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: min(86vw, 360px);
-  padding: 18px 16px;
-  background: rgba(0,0,0,.88);
-  backdrop-filter: blur(12px);
-  border-right: 1px solid rgba(255,255,255,.14);
-  z-index: 200;
-}
-
-.navPanel .head{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  margin-bottom: 14px;
-}
-
-.iconBtn{
-  width:44px; height:44px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.18);
-  background: rgba(255,255,255,.06);
-  color: rgba(255,255,255,.92);
-}
-
-.navPanel a{
-  display:block;
-  padding: 12px 12px;
-  margin: 6px 0;
-  border-radius: 14px;
-  text-decoration:none;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.04);
-  color: rgba(255,255,255,.90);
-  font-weight: 800;
-}
-
-.navPanel a.primary{
-  border-color: rgba(43,212,255,.32);
-  background: linear-gradient(135deg, rgba(43,212,255,.22), rgba(125,182,177,.10));
-}
-
-.scrim{
-  display:none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.45);
-  z-index: 190;
-}
-
-body.menuOpen{ overflow:hidden; }
-body.menuOpen .navPanel{ display:block; }
-body.menuOpen .scrim{ display:block; }
-
-@media (max-width: 760px){
-  nav{ display:none; }
-  .burger{ display:inline-flex; align-items:center; justify-content:center; }
-  .topbar{ padding: 10px 0; }
-  .logo{ width:52px; height:52px; border-radius: 16px; }
-  .brandTag{ display:none; }
-}
