@@ -312,6 +312,6 @@ body.menuOpen .scrim{ display:block; }
   nav{ display:none; }
   .burger{ display:inline-flex; align-items:center; justify-content:center; }
   .topbar{ padding: 10px 0; }
-  .logo{ width:52px; height:52px; border-radius: 16px; }
+  .logo{ width:60px; height:60px; border-radius: 16px; }
   .brandTag{ display:none; }
 }
