@@ -68,7 +68,7 @@ header{
   border: 1px solid rgba(255,255,255,.18);
   background: rgba(255,255,255,.06);
 }
-.logo img{width:100%; height:100%; object-fit:cover}
+.logo img{ width:100%; height:100%; object-fit:contain;}
 .brandTitle{font-weight: 900; letter-spacing:.02em}
 .brandTag{font-size:.92rem; color: var(--muted)}
 
